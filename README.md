@@ -15,7 +15,7 @@
 -   Run migrations by opening the terminal/ command prompt tool and then navigate to the root DIR of the project and then run "php artisan migrate"
 -   i've included a seeder file which creates admin users, to run it type "php artisan db:seed --class=CreateAdminUsers"
 -   Now you can run the project by typing "php artisan serve" on your terminal or if you're on a UNIX base OS you can set up a vhost for it.
--   if the previous step was successful, use details from the seeder to login as an admin user
+-   if the previous step was successful, use details from the seeder to login as an admin user (if you get an error please make sure the "storage" dir is writable)
 -   im using Laravel Jobs to send emails, to set this up, run "php artisan queue:work" (i included my .env file with all the configs for this so you don't have to set up QUEUE_CONNECTION)
 -   NB, make sure the "queue" is running before you add any entry
 -   from the admin dashboard, fill the entry form with the right info

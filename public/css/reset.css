@@ -1,0 +1,6 @@
+.card, .btn, .form-control, .card-header {
+    border-radius: 0;
+}
+.form-control {
+    height: 45px;
+}

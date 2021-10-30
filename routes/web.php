@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
 Auth::routes(['register' => false]);
-
-
 Route::get('/', 'Front@index')->name('home-page');
 Route::post('/add-entry', 'Entry@store')->name('add-entry');
 Route::get('/edit-entry/{id}', 'Entry@show')->name('show-entry');
